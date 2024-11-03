@@ -3,7 +3,6 @@ package mft.service;
 import mft.model.entity.SimCard;
 import mft.repository.SimCardRepository;
 
-import java.sql.SQLException;
 import java.util.List;
 
 public class SimCardService {
@@ -22,6 +21,12 @@ public class SimCardService {
     public static int countSimCardsByPersonId(int personId) throws Exception {
         try(SimCardRepository repository = new SimCardRepository()){
             return repository.countSimCardsByPersonId(personId);
+        }
+    }
+
+    public static List<SimCard> findByPersonId(int personId) throws Exception {
+        try(SimCardRepository repository = new SimCardRepository()){
+            return repository.findByPersonId(personId);
         }
     }
 }
