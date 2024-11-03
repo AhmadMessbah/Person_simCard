@@ -13,6 +13,7 @@ create table sim_cards
     owner_id references persons
 );
 
+create view PERSON_SIM_CARD_VIEW as
 select SIM_CARDS.ID as SIM_CARD_ID,
        SIM_CARDS.PHONE_NUMBER,
        PERSONS.ID   as PERSON_ID,

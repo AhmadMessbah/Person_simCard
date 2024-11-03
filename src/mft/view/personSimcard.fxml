@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mft.controller.PersonController">
+   <children>
+      <TableView fx:id="personTbl" layoutX="14.0" layoutY="100.0" prefHeight="287.0" prefWidth="227.0">
+        <columns>
+          <TableColumn fx:id="idClm" prefWidth="75.0" text="id" />
+          <TableColumn fx:id="nameClm" prefWidth="75.0" text="name" />
+            <TableColumn fx:id="familyNameClm" prefWidth="75.0" text="familyName" />
+        </columns>
+      </TableView>
+      <TableView fx:id="simcardTbl" layoutX="386.0" layoutY="100.0" prefHeight="287.0" prefWidth="177.0">
+        <columns>
+          <TableColumn fx:id="simcardIdClm" prefWidth="75.0" text="id" />
+          <TableColumn fx:id="phoneNumberClm" prefWidth="101.0" text="phoneNumber" />
+        </columns>
+      </TableView>
+   </children>
+</Pane>
